@@ -1,0 +1,22 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    background-image: url("fondciel.jpg");
+    width: 100%;
+    height: 100vh;
+}
+
+#perso {
+    margin: 0px;
+    padding: 0px;
+    padding-top: 5%;
+    width: 25%;
+    height: 100%;
+    background-color: black;
+}
+
+p {
+    color: white;
+    margin: 0px;
+    margin-left: 10%;
+}
