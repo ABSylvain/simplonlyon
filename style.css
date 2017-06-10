@@ -1,22 +1,69 @@
 body {
     margin: 0px;
     padding: 0px;
-    background-image: url("fondciel.jpg");
     width: 100%;
     height: 100vh;
+    display: flex;
 }
 
 #perso {
     margin: 0px;
     padding: 0px;
-    padding-top: 5%;
     width: 25%;
     height: 100%;
     background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 p {
     color: white;
     margin: 0px;
-    margin-left: 10%;
+}
+
+h6 {
+    color: white;
+    margin: 0px;
+}
+
+li {
+    color: white;
+    margin: 0px;
+}
+
+.fenetre1 {
+    width: 25%;
+    height: 100%;
+    background-image: url("imperius.jpg");
+    background-position: 35% 10%;
+    transition: all 0.3s;
+}
+
+.fenetre2 {
+    width: 25%;
+    height: 100%;
+    background-image: url("archon.jpg");
+    background-position: 50% 10%;
+    transition: all 0.3s;
+}
+
+.fenetre3 {
+    width: 25%;
+    height: 100%;
+    background-image: url("feticheur.jpg");
+    background-position: 55% 30%;
+    transition: all 0.3s;
+}
+
+.fenetre1:hover {
+    width: 40%;
+}
+
+.fenetre2:hover {
+    width: 40%;
+}
+
+.fenetre3:hover {
+    width: 40%;
 }
