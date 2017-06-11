@@ -34,8 +34,45 @@
             <p>GitHub : ABSylvain</p>
         <div>
     </section>
-    <section class="fenetre1"></section>
-    <section class="fenetre2"></section>
-    <section class="fenetre3"></section>
+    <section class="fenetre1">
+    <?php 
+        if($dossier = opendir('projet/')) {
+            while($fichier = readdir($dossier)) {
+                if($fichier !='.' && $fichier != '..' && $fichier != '.DS_Store'){
+                    if($dos = is_dir($fichier[0])){
+                        if($files = opendir($dos)){
+                            while($files = readdir($files)) {
+                                echo $files;
+                            }
+                        }
+                        
+                    }
+                }
+            }
+        }
+    ?>
+    </section>
+    <section class="fenetre2">
+    <?php 
+        if($dossier = opendir('projet/')) {
+            while($fichier = readdir($dossier)) {
+                if($fichier !='.' && $fichier != '..' && $fichier != '.DS_Store'){
+                    
+                }
+            }
+        }
+    ?>
+    </section>
+    <section class="fenetre3">
+    <?php 
+        if($dossier = opendir('projet/')) {
+            while($fichier = readdir($dossier)) {
+                if($fichier !='.' && $fichier != '..' && $fichier != '.DS_Store'){
+                    echo '<p>'.$fichier.'</p>';
+                }
+            }
+        }
+    ?>
+    </section>
 </body>
 </html>
