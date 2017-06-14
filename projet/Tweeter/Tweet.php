@@ -1,3 +1,4 @@
+<link rel="stylesheet" href="styleB.css" />
 <?php
 
 /*
@@ -11,6 +12,7 @@
  *
  * @author sylvainarnaudbourique
  */
+ 
 class Tweet {
     private $pseudo;
     private $tweet;
@@ -37,11 +39,13 @@ class Tweet {
         fclose($file);
     }
     public function aff() {
+        echo '<section>';
         echo '<h3>'.$this->pseudo.'</h3>';
         echo '<h4>'.$this->tweet.'</h4>';
         echo '<p>'.$this->avatar.'</p>';
         echo '<h6>'.$this->date.'</h6>';
         echo '<h6>'.$this->likes.'</h6>';
+        echo '</section>';
     }
     
 }

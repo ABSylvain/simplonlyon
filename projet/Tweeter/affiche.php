@@ -9,8 +9,6 @@ include_once './Tweet.php';
                     $message->aff();
         }
     }
-                
-    
 ?>
  
 
