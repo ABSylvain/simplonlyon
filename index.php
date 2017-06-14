@@ -41,11 +41,11 @@
                 if($fichier !='.' && $fichier != '..' && $fichier != '.DS_Store'){
                     if($dos = is_dir($fichier[0])){
                         if($files = opendir($dos)){
-                            while($files = readdir($files)) {
-                                echo $files;
+                            echo $files;
+                            while($fi = file_get_contents($files)) {
+                                echo $fi;
                             }
                         }
-                        
                     }
                 }
             }
@@ -57,10 +57,14 @@
         if($dossier = opendir('projet/')) {
             while($fichier = readdir($dossier)) {
                 if($fichier !='.' && $fichier != '..' && $fichier != '.DS_Store'){
-                    
+                    $cont = opendir('projet/'.$fichier);
+                        echo $cont;
+                        }
+                    }
+                       
                 }
-            }
-        }
+            
+        
     ?>
     </section>
     <section class="fenetre3">
