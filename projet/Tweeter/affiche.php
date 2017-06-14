@@ -7,7 +7,7 @@ include_once './Tweet.php';
                 $str = explode("\n", $cont);
                     $message = new Tweet ($str[0], $str[1], $str[2], $str[3], $str[4]);
                     $message->aff();
-        }           
+        }
     }
                 
     
