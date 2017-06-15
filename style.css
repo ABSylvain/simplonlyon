@@ -9,7 +9,7 @@ body {
 #perso {
     margin: 0px;
     padding: 0px;
-    width: 25%;
+    width: 250px;
     height: 100%;
     background-color: black;
     display: flex;
@@ -33,37 +33,14 @@ li {
 }
 
 .fenetre1 {
-    width: 25%;
+    width: 50%;
+    padding: 0;
     height: 100%;
     background-image: url("imperius.jpg");
     background-position: 35% 10%;
-    transition: all 0.3s;
-}
-
-.fenetre2 {
-    width: 25%;
-    height: 100%;
-    background-image: url("archon.jpg");
-    background-position: 50% 10%;
-    transition: all 0.3s;
-}
-
-.fenetre3 {
-    width: 25%;
-    height: 100%;
-    background-image: url("feticheur.jpg");
-    background-position: 55% 30%;
-    transition: all 0.3s;
+    transition: all 1s;
 }
 
 .fenetre1:hover {
-    width: 40%;
-}
-
-.fenetre2:hover {
-    width: 40%;
-}
-
-.fenetre3:hover {
-    width: 40%;
+    padding: 0 10%;
 }

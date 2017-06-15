@@ -34,49 +34,31 @@
             <p>GitHub : ABSylvain</p>
         <div>
     </section>
-    <section class="fenetre1">
+    
     <?php 
-        if($dossier = opendir('projet/')) {
-            while($fichier = readdir($dossier)) {
-                if($fichier !='.' && $fichier != '..' && $fichier != '.DS_Store'){
-                    if($dos = is_dir($fichier[0])){
-                        if($files = opendir($dos)){
-                            echo $files;
-                            while($fi = file_get_contents($files)) {
-                                echo $fi;
-                            }
+
+    $i=1;
+    
+    if($dossier = opendir('projet/')) {
+        while($fichier = readdir($dossier)) {
+            if($fichier !='.' && $fichier != '..' && $fichier != '.DS_Store'){
+                if ($file = opendir('projet/'.$fichier)) {
+                    while($files = readdir($file)){
+                        if($files == 'index.php'){
+                            echo '<section class="fenetre1">';
+                            echo '<a href="projet/'.$fichier.'/'.$files.'">'.$files.'</a>';
+                            echo '</section>';
+                            $i++;
                         }
                     }
                 }
             }
         }
-    ?>
-    </section>
-    <section class="fenetre2">
-    <?php 
-        if($dossier = opendir('projet/')) {
-            while($fichier = readdir($dossier)) {
-                if($fichier !='.' && $fichier != '..' && $fichier != '.DS_Store'){
-                    $cont = opendir('projet/'.$fichier);
-                        echo $cont;
-                        }
-                    }
-                       
-                }
+    }
+                
             
         
     ?>
-    </section>
-    <section class="fenetre3">
-    <?php 
-        if($dossier = opendir('projet/')) {
-            while($fichier = readdir($dossier)) {
-                if($fichier !='.' && $fichier != '..' && $fichier != '.DS_Store'){
-                    echo '<p>'.$fichier.'</p>';
-                }
-            }
-        }
-    ?>
-    </section>
+    
 </body>
 </html>
