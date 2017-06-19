@@ -13,7 +13,7 @@ body {
     padding: 0px;
     width: 100%;
     height: 100%;
-    background-color: black;
+    background-color: #155BFF;
     justify-content: center;
     align-items: center;
 }
@@ -37,7 +37,7 @@ li {
     width: 50%;
     padding: 0;
     height: 100%;
-    background-color: #D5691F;
+    background-color: #15FFD4;
     transition: all 1s;
     display: flex;
     justify-content: center;
@@ -51,7 +51,7 @@ li {
 a {
     width: 100px;
     height: 15%;
-    background-color: black;
+    background-color: #22C5FF;
     -webkit-text-fill-color: white;
     display: flex;
     justify-content: center;
@@ -68,7 +68,11 @@ a:hover {
 }
 
 #openFiche {
-    width: 25%;
+    width: 20%;
     height: 100%;
-    background-color: 8E22FF;
+    background-color: #1381E8;
+}
+
+#closeFiche {
+    background-color: #1381E8;
 }

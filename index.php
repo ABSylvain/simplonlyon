@@ -48,7 +48,7 @@
                     while($files = readdir($file)){
                         if($files == 'index.php'){
                             echo '<section class="fenetre1">';
-                            echo '<a href="projet/'.$fichier.'/'.$files.'">'.$files.'</a>';
+                            echo '<a href="projet/'.$fichier.'/'.$files.'">'.$fichier.'</a>';
                             echo '</section>';
                             $i++;
                         }
