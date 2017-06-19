@@ -45,7 +45,7 @@ li {
 }
 
 .fenetre1:hover {
-    padding: 0 10%;
+    width: 100%;
 }
 
 a {
@@ -70,7 +70,7 @@ a:hover {
 #openFiche {
     width: 20%;
     height: 100%;
-    background-color: #1381E8;
+    background-color: #155BFF;
     padding: 0;
     transition: all 0.8s;
 }
@@ -80,7 +80,5 @@ a:hover {
 }
 
 #openFiche:hover {
-    padding: 22%;
+    width: 30%;
 }
-
-#closeFiche:hover {}

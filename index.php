@@ -47,9 +47,12 @@
                 if ($file = opendir('projet/'.$fichier)) {
                     while($files = readdir($file)){
                         if($files == 'index.php'){
+                            
                             echo '<section class="fenetre1">';
                             echo '<a href="projet/'.$fichier.'/'.$files.'">'.$fichier.'</a>';
                             echo '</section>';
+                            
+                            
                             $i++;
                         }
                     }
@@ -62,5 +65,6 @@
         
     ?>
     <script src="script.js"></script>
+
 </body>
 </html>
