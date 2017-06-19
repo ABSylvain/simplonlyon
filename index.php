@@ -8,7 +8,9 @@
     <title>Sommaire</title>
 </head>
 <body>
+    <button id="openFiche">open</button>
     <section id="perso">
+        <button id="closeFiche">close</button>
         <div>
             <p>Arnaud-Bourique</p>
             <p>Sylvain</p>
@@ -59,6 +61,6 @@
             
         
     ?>
-    
+    <script src="script.js"></script>
 </body>
 </html>
