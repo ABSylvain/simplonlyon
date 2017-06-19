@@ -71,8 +71,16 @@ a:hover {
     width: 20%;
     height: 100%;
     background-color: #1381E8;
+    padding: 0;
+    transition: all 0.8s;
 }
 
 #closeFiche {
     background-color: #1381E8;
 }
+
+#openFiche:hover {
+    padding: 22%;
+}
+
+#closeFiche:hover {}

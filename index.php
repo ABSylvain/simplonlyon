@@ -8,9 +8,9 @@
     <title>Sommaire</title>
 </head>
 <body>
-    <button id="openFiche">open</button>
+    <button id="openFiche">Un peut plus sur moi</button>
     <section id="perso">
-        <button id="closeFiche">close</button>
+        <button id="closeFiche">Retour au projet</button>
         <div>
             <p>Arnaud-Bourique</p>
             <p>Sylvain</p>
