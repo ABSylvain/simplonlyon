@@ -7,15 +7,19 @@ function affPerso(cv) {
     if (affichage === false) {
         cv.style.display = "flex";
         affichage = true;
+
     } else {
         cv.style.display = "none";
         affichage = false;
+
     }
 }
 
 openFiche.addEventListener('click', function() {
     affPerso(perso);
+
 });
 closeFiche.addEventListener('click', function() {
     affPerso(perso);
+
 });
